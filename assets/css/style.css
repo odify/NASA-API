@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Fira Sans, serif;
+    font-weight: 800;
+    background-color: #191919;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #F25c27;
+    text-align: center;
+    border: 3px outset #ff8c5f;
+}
+.headline{
+    font-size: 2.77em;
+    color: #fff;
+    letter-spacing: 0.8px;
+    background-color: #F25c27;
+    text-shadow: 1.77px 2.22px 3.44px #191919;
+    text-transform: uppercase;
+    animation-name: xy;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+@keyframes xy{
+    33% {margin-right: 1%; text-shadow: 1.77px 1.22px 3.44px #191919;}
+    66% {margin-left: 1%; text-shadow: 2.77px 2.22px 3.44px #191919;}
+    77% {margin-left: 1%; color: black; text-shadow: 1.77px 3.22px 2.44px #fff;}
+}
+main{
+    height: 100vh;
+}
+section{
+  margin-top: 5%;
+  text-align: center;
+  width: 75%;
+  margin-left: 12.5%;
+}
+.title{
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.img1{
+  margin-top: 5%;
+  width: 80%;
+}
+@media only screen and (min-width: 600px) {
+  .title{
+    font-size: 1.2em;
+  }
+  .img1{
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .img1{
+    width: 70%;
+  }
+} 
